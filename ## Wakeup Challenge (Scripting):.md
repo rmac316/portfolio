@@ -83,3 +83,18 @@ done
 ```
 
 *this spits out the results to the command line significantly faster*
+
+By tailoring the existing bash script to match this style, we have a bash script that looks like this:
+
+```
+#! /bin/bash
+
+for i in {1..255}; do
+    ping 192.168.216.$i -c 1 | grep "bytes from" | cut -d " " -f 4 | cut -d ":" -f 1 &
+
+done
+```
+
+*after running the bash script again, the results were displayed significantly faster* 
+
+- *A change from grep 54 to grep "bytes from" was made to eliminate garbage output pulled from the grep 64 search*
