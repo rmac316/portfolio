@@ -102,8 +102,10 @@ pass: none
 
 ## Flag
 
-Results
-![alt text](image-5.png)
+After establishing connection to the target machine as root via telnet, the ```ls``` command was run to list the contents of the current directory. A file named "flag.txt" was observed, and upon using the ```cat``` function, the flag was displayed:
+
+
+![Flag]()
 
 ## Summary
 A target IP address was provided with instructions to retrieve the flag located on the target machine. 
