@@ -84,6 +84,8 @@ Upon using the "telnet [target IP] [port number]" command, a telnet connection w
 
 Testing for weak/default usernames and password, the name "root" was entered into the login prompt. After selecting enter, root access to the target machine was granted. It appears there is no password configured for the root user on the target machine.
 
+![]()
+
 ## Privilege Escalation
 ### Normal / Low-Privelege User
 not encountered/needed
