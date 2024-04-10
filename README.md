@@ -1,7 +1,6 @@
 # HTB: Meow Walkthrough
-**AS A NOTE, THE TARGET MACHINE TIMED OUT ABOUT HALFWAY THROUGH THE WALKTHROUGH, AND A NEW TARGET IP NEEDED TO BE GENERATED. THIS IS TO CLEAR ANY CONFUSION REGARDING CHANGES IN IP IN WALKTHROUGH BELOW**
 
-## Objective
+## Mission Objective
 Gain access to machine to obtain flag
 
 ## Reconnaissance
@@ -10,7 +9,7 @@ Gain access to machine to obtain flag
 In this lab, the IP address of the target machine is provided
 
 #### Target IP Address(es)
-Target 1: 10.129.72.180
+Target 1: 10.129.63.79
 
 
 ### OSINT
@@ -24,17 +23,17 @@ Target 1: 10.129.72.180
 #### Commands Ran
 Scan 1
 ```
-nmap -A -T5 10.129.72.180
+nmap -A -T5 10.129.63.79
 ```
-- *a scan is being run on the IP address 10.129.72.180 with the -A switch, which performs OS detection, version detection of services, script scanning for vulnerabilities and traceroute all in one option.*
+- *a scan is being run on the IP address 10.129.63.79 with the -A switch, which performs OS detection, version detection of services, script scanning for vulnerabilities and traceroute all in one option.*
 
 - *the -T5 essentially speeds up the process by running the scan in parallel, but is more prone to errors.*
 
 Scan 2
 ```
-nmap -n -sV -Pn --script "*telnet* and safe" -p 23 10.129.72.180 | tee nmap.results_focused
+nmap -n -sV -Pn --script "*telnet* and safe" -p 23 10.129.63.79
 ```
-*a scan is being run on the IP address 10.129.72.180 with several switches:*
+*a scan is being run on the IP address 10.129.63.79 with several switches:*
 
 - *-n: tells nmap to skip DNS resolution, relying solely on the IP address provided in the command*
 
@@ -46,7 +45,8 @@ nmap -n -sV -Pn --script "*telnet* and safe" -p 23 10.129.72.180 | tee nmap.resu
 
 - *-p 23: specifies to do this scan on port 23*
 
-- *-tee nmap.results_focused: saving the results of the scan to a file named nmap.results_focused*
+*OPTIONAL*
+- ```| -tee nmap.results_focused``` : saving the results of the scan to a file named nmap.results_focused*
 
 
 #### Scan Results
