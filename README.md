@@ -57,11 +57,13 @@ Scan 1 Results
 *Results of the first nmap scan shows Port 23 as the only open port, with 4 other ports being filtered.*
 
 Scan 2 Results
+
 ![Scan 2](https://github.com/rmac316/portfolio/blob/main/Images/Meow_Nmap_Scan_2.png)
 
 *Results of second scan shows the service as "telnet"
 
 ### Dirbusting
+N/A
 
 
 ### Ports
