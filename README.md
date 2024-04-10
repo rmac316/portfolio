@@ -51,7 +51,8 @@ nmap -n -sV -Pn --script "*telnet* and safe" -p 23 10.129.1.17
 
 #### Scan Results
 Scan 1 Results
-![alt text]()
+
+![Scan 1](https://github.com/rmac316/portfolio/blob/main/Images/Meow_Nmap_Scan_1.png)
 
 *Results of the first nmap scan shows Port 23 as the only open port, with 4 other ports being filtered.*
 
