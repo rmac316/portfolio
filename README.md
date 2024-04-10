@@ -105,7 +105,7 @@ pass: none
 After establishing connection to the target machine as root via telnet, the ```ls``` command was run to list the contents of the current directory. A file named "flag.txt" was observed, and upon using the ```cat``` function, the flag was displayed:
 
 
-![Flag]()
+![Flag](https://github.com/rmac316/portfolio/blob/main/Images/Meow_flag.png)
 
 ## Summary
 A target IP address was provided with instructions to retrieve the flag located on the target machine. 
