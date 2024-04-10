@@ -9,7 +9,7 @@ Gain access to machine to obtain flag
 In this lab, the IP address of the target machine is provided
 
 #### Target IP Address(es)
-Target 1: 10.129.63.79
+Target 1: 10.129.1.17
 
 
 ### OSINT
@@ -23,7 +23,7 @@ Target 1: 10.129.63.79
 #### Commands Ran
 Scan 1
 ```
-nmap -A -T5 10.129.63.79
+nmap -A -T5 10.129.1.17
 ```
 - *a scan is being run on the IP address 10.129.63.79 with the -A switch, which performs OS detection, version detection of services, script scanning for vulnerabilities and traceroute all in one option.*
 
@@ -31,7 +31,7 @@ nmap -A -T5 10.129.63.79
 
 Scan 2
 ```
-nmap -n -sV -Pn --script "*telnet* and safe" -p 23 10.129.63.79
+nmap -n -sV -Pn --script "*telnet* and safe" -p 23 10.129.1.17
 ```
 *a scan is being run on the IP address 10.129.63.79 with several switches:*
 
@@ -51,7 +51,7 @@ nmap -n -sV -Pn --script "*telnet* and safe" -p 23 10.129.63.79
 
 #### Scan Results
 Scan 1 Results
-![alt text](image-1.png)
+![alt text]()
 
 *Results of the first nmap scan shows Port 23 as the only open port, with 4 other ports being filtered.*
 
